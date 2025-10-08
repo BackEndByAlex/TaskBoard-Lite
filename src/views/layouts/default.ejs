@@ -6,15 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Taskboard</title>
   <base href="<%= baseURL %>" />
-  <link rel="stylesheet" href="./css/styles.css">
   <%- defineContent('style') %>
   <%- defineContent('script') %>
 </head>
 
-<body class="<%= !locals.hideHeader ? 'sidebar-visible' : '' %>">
+<body>
   <%- include('../partials/header') %>
   
-  <div class="container">
+  <div>
     <%- body %>
   </div>
 
