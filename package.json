@@ -15,7 +15,6 @@
     "express": "^5.1.0",
     "express-ejs-layouts": "^2.5.1",
     "express-http-context": "^2.0.1",
-    "express-session": "^1.18.2",
     "token-auth-edu": "^1.0.3"
   }
 }
