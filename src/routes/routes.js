@@ -4,11 +4,18 @@ import authRoutes from './api/auth/authRoutes.js'
 import taskRoutes from './api/tasks/taskRoutes.js'
 import userRoutes from './api/users/userRoutes.js'
 
-import { pageController } from '../controller/pageController.js'
+import { 
+  renderHomePage, 
+  renderLoginPage, 
+  renderRegisterPage,
+} from '../controller/pageController.js'
 
 const router = express.Router()
 
-router.get('/', pageController) // home page route
+router.get('/', renderHomePage)
+router.get('/login', renderLoginPage)
+router.get('/register', renderRegisterPage)
+
 
 router.use('/auth', authRoutes)
 router.use('/tasks', taskRoutes)
